@@ -5,10 +5,11 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package files
-COPY package*.json ./
+COPY package.json ./
 
 # ติดตั้ง dependencies
-RUN npm ci --only=production
+# ใช้ npm install แทน npm ci เพื่อรองรับกรณีที่ lock file ไม่ sync หรือไม่มี
+RUN npm install --only=production
 
 # Copy source code
 COPY . .
