@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+npm-debug.log
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Uploads (จะสร้างใหม่ใน container)
+uploads/*
+!uploads/.gitkeep
+
+# Other
+README.md
+*.md
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# SQL files (ไม่จำเป็นใน production)
+*.sql
+
+# Zip files
+*.zip
+
